@@ -15,5 +15,6 @@ function add(x: number | string, y: number | string): number | string {
   }
 }
 
-const v1: number = add(1, 2);
-console.log(add(1, "2"));
+const v1: number = add(1, 2); // 요건2 충족.
+const v2: string = add("100", "20"); // 요건1 충족
+console.log(add(1, "2")); // 요건 3 충족.

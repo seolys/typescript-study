@@ -1,17 +1,10 @@
-// prototype
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // function getParam(this: string, index: number): string { return ""; }
-
 // String.prototype.getParam = getParam;
 // console.log("asdf, 1234, ok ".getParam(1));
-
-function getParam(this: string, index: number): string {
-  return "";
+function getParam(index) {
+    return "";
 }
-
-interface String {
-  getParam(this: string, index: number): string;
-}
-
 String.prototype.getParam = getParam;
 console.log("asdf, 1234, ok ".getParam(1));
